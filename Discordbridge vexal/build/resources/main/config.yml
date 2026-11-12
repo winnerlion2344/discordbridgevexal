@@ -1,0 +1,17 @@
+bot:
+  base-url: "http://CHANGE-ME:3000"
+  token: "CHANGE-ME"
+  timeout-ms: 5000
+server:
+  name: "My Server"
+events:
+  chat: true
+  join: true
+  leave: true
+  death: true
+  console: false
+commands:
+  enabled: true
+  poll-interval-seconds: 5
+  max-per-poll: 10
+debug: false

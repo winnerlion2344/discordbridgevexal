@@ -1,0 +1,23 @@
+name: VexalBridge
+version: ${version}
+main: net.vexal.bridge.VexalBridgePlugin
+api-version: 1.21
+folia-supported: true
+author: Vexal
+description: Minecraft to Discord HTTP bridge for Folia and Paper
+website: https://vexal.net
+
+commands:
+  vexalbridge:
+    description: VexalBridge administration commands
+    usage: /vexalbridge <status|reload|test>
+    permission: vexalbridge.admin
+    aliases: [vb, vexal]
+
+permissions:
+  vexalbridge.admin:
+    description: Access VexalBridge admin commands
+    default: op
+  vexalbridge.silent:
+    description: Players with this permission are not forwarded to the bridge
+    default: false
